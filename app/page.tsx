@@ -4,8 +4,15 @@ import Header from "./Header/page";
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { Progress } from "@/components/ui/progress";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+
 
 const Page = () => {
   return (
@@ -111,9 +118,125 @@ mubarak-olalekan-106a20304"
              duration:3 ,
            }}><ProjectCard /></motion.div>
       </div>
-      <div>dfgfgjhjkl;l;
-        
+      <div className="mt-32 flex  flex-col justify-center border border-red-800">
+      <Progress value={90} className="w-[350px]  "/><p>HTML</p>
+      <Progress value={80}  className="w-[350px] "/><p>CSS</p>
+      <Progress value={75}  className="w-[350px] "/><p>REACT</p>
+
       </div>
+      < motion.div 
+           initial={{ x: 100, opacity: 0 }}
+           whileInView={{ x: 0, opacity: 1 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 60 },
+             opacity: { duration: 0.6 },
+             ease: "easeIn",
+             duration:3 ,
+           }}>
+      <table className="table-auto  flex m-auto justify-center mt-52">
+  <tbody>
+    <tr className="h-20 w-40 border border-black bg-blus">
+    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>  
+      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
+        <HoverCard>
+          <HoverCardTrigger className="bg-white">
+            <FaCss3 size={50} className=" flex m-auto" />
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      </tr>
+    <tr className="h-20 w-40 border border-black bg-blus">
+    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>  
+      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
+        <HoverCard>
+          <HoverCardTrigger className="bg-white">
+            <FaCss3 size={50} className=" flex m-auto" />
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      </tr>
+    <tr className="h-20 w-40 border border-black bg-blus">
+    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>  
+      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
+        <HoverCard>
+          <HoverCardTrigger className="bg-white">
+            <FaCss3 size={50} className=" flex m-auto" />
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
+        <HoverCard>
+          <HoverCardTrigger>
+            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          </HoverCardTrigger>
+          <HoverCardContent>
+            CSS3 Proficiency – Styling and layout mastery.
+          </HoverCardContent>
+        </HoverCard>
+      </td>    
+      </tr>
+
+  </tbody>
+</table>
+
+      </motion.div>
     </div>
   );
 };
