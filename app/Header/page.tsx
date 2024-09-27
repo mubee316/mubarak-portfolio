@@ -36,13 +36,13 @@ const Header = () => {
     <AlertDialogHeader>
       <AlertDialogTitle className='font-bold text-1xl text-center text-blus'>Building the Future, One Line of Code at a Time</AlertDialogTitle>
       <AlertDialogDescription>
-      Hello, I'm Mubarak Olalekan, a passionate and detail-oriented frontend developer with a strong focus on creating engaging, user-friendly web applications. With expertise in technologies such as Next.js, React, TypeScript, and Tailwind CSS, I thrive on transforming ideas into responsive, interactive digital experiences. My work is driven by a love for clean code, efficient design, and intuitive user interfaces.
+      Hello, I&apos;m Mubarak Olalekan, a passionate and detail-oriented frontend developer with a strong focus on creating engaging, user-friendly web applications. With expertise in technologies such as Next.js, React, TypeScript, and Tailwind CSS, I thrive on transforming ideas into responsive, interactive digital experiences. My work is driven by a love for clean code, efficient design, and intuitive user interfaces.
 
-I am committed to continuous learning and growth in the tech field, constantly expanding my knowledge and keeping up with the latest industry trends. Whether I'm building a URL shortening app with analytics, integrating third-party APIs, or working on personal projects, I aim to deliver functional, elegant solutions that meet both user and business needs.
+I am committed to continuous learning and growth in the tech field, constantly expanding my knowledge and keeping up with the latest industry trends. Whether I&apos;m building a URL shortening app with analytics, integrating third-party APIs, or working on personal projects, I aim to deliver functional, elegant solutions that meet both user and business needs.
 
 In addition to development, I have an entrepreneurial spirit, managing a small business where I combine creativity with technical skills to offer unique digital solutions. My goal is to contribute to innovative projects, collaborate with like-minded professionals, and continue pushing the boundaries of what modern web technologies can achieve.
 <br /><br />
-Let’s connect and create something exceptional!s.
+Let&apos;s connect and create something exceptional!s.
       </AlertDialogDescription>
     </AlertDialogHeader>
     <AlertDialogFooter>

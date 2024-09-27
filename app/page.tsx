@@ -44,7 +44,7 @@ const Page = () => {
             </h1>
           </div>
           <div className="text-sm md:text-[20px] mt-4 font-mono text-gray-500">
-            Hi there! I'm Mubarak, a <br />
+            Hi there! I&apos;m Mubarak, a <br />
             frontend developer focused on creating responsive,
             <br /> intuitive, and efficient web interfaces{" "}
           </div>
@@ -118,12 +118,31 @@ mubarak-olalekan-106a20304"
              duration:3 ,
            }}><ProjectCard /></motion.div>
       </div>
-      <div className="mt-32 flex  flex-col justify-center border border-red-800">
+      {/* <div className="mt-32 flex  flex-col justify-center border border-red-800">
       <Progress value={90} className="w-[350px]  "/><p>HTML</p>
       <Progress value={80}  className="w-[350px] "/><p>CSS</p>
       <Progress value={75}  className="w-[350px] "/><p>REACT</p>
 
-      </div>
+      </div> */}
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-center mt-20 space-x-20 ">
+        <motion.div 
+         initial={{ x: -100, opacity: 0 }}
+         whileInView={{ x: 0, opacity: 1 }}
+         transition={{
+           delay: 0.2,
+           x: { type: "spring", stiffness: 60 },
+           opacity: { duration: 0.6 },
+           ease: "easeIn",
+           duration: 1,
+         }}>
+          <div>
+          <h1 className="text-2xl md:text-4xl font-bold">
+          <span className="underline font-bold text-blus">Shaping</span><br /> the <span className="text-blus underline ">future of tech</span><br />
+             one <span className="text-blus underline">project</span> at a time</h1>
+          </div>
+          <div className="text-sm  text-gray-500 text-center mt-2"><p>Take a closer look! <br />
+          Hover over the card to discover my growth in tech <br /> and see how my skills have evolved over time.</p></div>
+        </motion.div>
       < motion.div 
            initial={{ x: 100, opacity: 0 }}
            whileInView={{ x: 0, opacity: 1 }}
@@ -134,13 +153,13 @@ mubarak-olalekan-106a20304"
              ease: "easeIn",
              duration:3 ,
            }}>
-      <table className="table-auto  flex m-auto justify-center mt-52">
+      <table className="table-auto  flex m-auto justify-center ">
   <tbody>
     <tr className="h-20 w-40 border border-black bg-blus">
     <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
-          <HoverCardTrigger>
-            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          <HoverCardTrigger >
+            <FaHtml5 size={50} className="  bg-white flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -160,7 +179,7 @@ mubarak-olalekan-106a20304"
       <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger>
-            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+            <FaJs size={50} className=" flex m-auto  "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -237,6 +256,7 @@ mubarak-olalekan-106a20304"
 </table>
 
       </motion.div>
+    </div>
     </div>
   );
 };
