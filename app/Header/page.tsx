@@ -12,21 +12,24 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import Menubar from '@/components/Menubar';
 
 
 const Header = () => {
   return (
     <>
-      <div className='flex flex-row items-center justify-between border bg-blus h-20 fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4 md:px-10'>
+      <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64 '>
       
-        <div className='text-white font-bold'>
+        <div className='text-white font-bold hidden md:flex items-center  justify-between gap-8 h-full '>
+          <div className='  items-center  gap-12'>
           <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
           <p className='font-light font-mono text-xs md:text-sm'>
             Software Engineer (Front-End)
           </p>
+          </div>
         </div>
 
-        <div className='flex space-x-3 md:space-x-5 items-center'>
+        <div className=' hidden xl:flex space-x-3 md:space-x-5 items-center'>
           <AlertDialog>
   <AlertDialogTrigger>          <Button className='bg-transparent text-white text-xs md:text-sm'>
   About Me
@@ -57,6 +60,16 @@ Let&apos;s connect and create something exceptional!s.
           <Button className='bg-white text-black text-xs md:text-sm'>
             Hire Me
           </Button>
+        </div>
+        {/* moblie */}
+        <div className='text-white font-bold h-full flex items-center justify-between  gap-16 md:hidden'>
+          <div className='flex flex-col items-center '>
+          <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
+          <p className='font-light font-mono text-xs md:text-sm'>
+            Software Engineer (Front-End)
+          </p>
+          </div>
+          <Menubar/>
         </div>
       </div>
     </>

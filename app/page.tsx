@@ -136,7 +136,7 @@ mubarak-olalekan-106a20304"
            duration: 1,
          }}>
           <div>
-          <h1 className="text-2xl md:text-4xl font-bold">
+          <h1 className="text-2xl md:text-4xl font-bold text-center">
           <span className="underline font-bold text-blus">Shaping</span><br /> the <span className="text-blus underline ">future of tech</span><br />
              one <span className="text-blus underline">project</span> at a time</h1>
           </div>
@@ -159,7 +159,7 @@ mubarak-olalekan-106a20304"
     <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger >
-            <FaHtml5 size={50} className="  bg-white flex m-auto   hover:text-blus "/>
+            <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -191,7 +191,7 @@ mubarak-olalekan-106a20304"
     <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger>
-            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -211,7 +211,7 @@ mubarak-olalekan-106a20304"
       <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger>
-            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          <FaJs size={50} className="   flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -223,7 +223,7 @@ mubarak-olalekan-106a20304"
     <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger>
-            <FaHtml5 size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
@@ -243,7 +243,7 @@ mubarak-olalekan-106a20304"
       <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
         <HoverCard>
           <HoverCardTrigger>
-            <FaJs size={50} className=" flex m-auto  text-white hover:text-blus "/>
+          <FaJs size={50} className="   flex m-auto   hover:text-blus "/>
           </HoverCardTrigger>
           <HoverCardContent>
             CSS3 Proficiency – Styling and layout mastery.
