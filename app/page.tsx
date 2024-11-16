@@ -86,7 +86,7 @@ mubarak-olalekan-106a20304"
         <p className="mt-2">Discover My Work: A Tour of My Projects</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 md:mt-20 px-4 md:px-10">
+      <div className="flex  gap-4 mt-10 md:mt-20 px-4 md:px-10 overflow-x-scroll scrollbar">
         <motion.div 
            initial={{ x: -100, opacity: 0 }}
            whileInView={{ x: 0, opacity: 1 }}
@@ -97,6 +97,16 @@ mubarak-olalekan-106a20304"
              ease: "easeIn",
              duration: 1,
            }}><ProjectCard  /></motion.div>
+        <motion.div
+           initial={{ y: 100, opacity: 0 }}
+           whileInView={{ y: 0, opacity: 1 }}
+           transition={{
+             delay: 0.2,
+             y: { type: "spring", stiffness: 60 },
+             opacity: { duration: 0.6 },
+             ease: "easeIn",
+             duration: 0.2,
+           }}><ProjectCard2 /></motion.div>
         <motion.div
            initial={{ y: 100, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
