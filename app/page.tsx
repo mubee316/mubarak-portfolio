@@ -4,7 +4,7 @@ import Header from "./Header/page";
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FaCss3, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaCss3, FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -163,107 +163,46 @@ mubarak-olalekan-106a20304"
              ease: "easeIn",
              duration:3 ,
            }}>
-      <table className="table-auto  flex m-auto justify-center ">
-  <tbody>
-    <tr className="h-20 w-40 border border-black bg-blus">
-    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger >
-            <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>  
-      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
-        <HoverCard>
-          <HoverCardTrigger className="bg-white">
-            <FaCss3 size={50} className=" flex m-auto" />
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger>
-            <FaJs size={50} className=" flex m-auto  "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      </tr>
-    <tr className="h-20 w-40 border border-black bg-blus">
-    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger>
-          <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>  
-      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
-        <HoverCard>
-          <HoverCardTrigger className="bg-white">
-            <FaCss3 size={50} className=" flex m-auto" />
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger>
-          <FaJs size={50} className="   flex m-auto   hover:text-blus "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      </tr>
-    <tr className="h-20 w-40 border border-black bg-blus">
-    <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger>
-          <FaHtml5 size={50} className="   flex m-auto   hover:text-blus "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>  
-      <td className=" m-auto items-center justify-center text-center w-28 bg-white text-blus hover:bg-blus hover:text-white">
-        <HoverCard>
-          <HoverCardTrigger className="bg-white">
-            <FaCss3 size={50} className=" flex m-auto" />
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      <td className=" m-auto items-center justify-center text-center w-28  hover:bg-white hover:text-blus">
-        <HoverCard>
-          <HoverCardTrigger>
-          <FaJs size={50} className="   flex m-auto   hover:text-blus "/>
-          </HoverCardTrigger>
-          <HoverCardContent>
-            CSS3 Proficiency – Styling and layout mastery.
-          </HoverCardContent>
-        </HoverCard>
-      </td>    
-      </tr>
+            <div className=" flex  items-center justify-between gap-6">
+              <div className="">
+                <FaHtml5 className="w-10 h-20"/>
+              </div>
+              <span className="flex items-center gap-8">
+                <Progress value={95} className="w-56 h-10"/>
+                <p>95%</p>
 
-  </tbody>
-</table>
+              </span>
+            </div>
+            <div className=" flex  items-center justify-between gap-6">
+              <div className="">
+                <FaCss3Alt className="w-10 h-20"/>
+              </div>
+              <span className="flex items-center gap-8">
+                <Progress value={90} className="w-56 h-10"/>
+                <p>90%</p>
+
+              </span>
+            </div>
+            <div className=" flex  items-center justify-between gap-6">
+              <div className="">
+                <FaJs className="w-10 h-20"/>
+              </div>
+              <span className="flex items-center gap-8">
+                <Progress value={88} className="w-56 h-10"/>
+                <p>88%</p>
+
+              </span>
+            </div>
+            <div className=" flex  items-center justify-between gap-6">
+              <div className="">
+                <FaReact className="w-10 h-20"/>
+              </div>
+              <span className="flex items-center gap-8">
+                <Progress value={85} className="w-56 h-10"/>
+                <p>83%</p>
+              </span>
+            </div>
+   
 
       </motion.div>
     </div>
