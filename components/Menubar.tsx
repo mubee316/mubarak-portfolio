@@ -1,9 +1,12 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useState } from 'react'
+import Contacts from '@/components/Contacts'
 
 const Menubar = () => {
     const [open, setOpen] = useState(false)
+
   return (
     <div>
         <Image 
@@ -18,7 +21,7 @@ const Menubar = () => {
             <div className='absolute top-20 left-0 w-full h-[calc(100vh-80px)] bg-black text-white z-10'>
                 <div className='flex flex-col items-center justify-center h-full'>
                     <a href="/">About me</a>
-                    <a href="/">Contact</a>
+                    <a href='/'>Contacts</a>
                     <a href="/">Hire me</a>
                 </div>
             </div>

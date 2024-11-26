@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import React from 'react';
+"use client"
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   AlertDialog,
@@ -13,9 +14,12 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import Menubar from '@/components/Menubar';
+import Link from 'next/link';
 
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64 '>
@@ -54,9 +58,24 @@ Let&apos;s connect and create something exceptional!s.
     </AlertDialogFooter>
   </AlertDialogContent>
 </AlertDialog>
-          <Button className='bg-transparent text-white text-xs md:text-sm'>
-            Contact
+          <Button className='bg-transparent text-white text-xs md:text-sm'
+          onClick={() => setOpen((prev) => !prev)}>
+            Contacts
           </Button>
+          {open && (
+           <div  className=" w-max absolute p-4 rounded-md top-16 right-1  shadow-lg bg-white flex  flex-col gap-6 z-20 mt-4 transition-opacity duration-300">
+           <h1 className="text-lg font-semibold mb-2">contact me on this platforms</h1>
+           <div className="flex flex-col gap-4">
+             <Link href="https://twitter.com/mubaraq_olalekan">
+               <div className="flex items-center gap-2 text-blue-700 hover:underline">
+               <FaTwitter /> Twitter
+               </div>
+              
+             </Link>
+           </div>
+         </div>
+          )}
+          </div>
           <Button className='bg-white text-black text-xs md:text-sm'>
             Hire Me
           </Button>
@@ -71,7 +90,7 @@ Let&apos;s connect and create something exceptional!s.
           </div>
           <Menubar/>
         </div>
-      </div>
+      
     </>
   );
 };
