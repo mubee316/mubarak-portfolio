@@ -12,6 +12,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import Footer from "@/components/Footer";
 
 
 const Page = () => {
@@ -206,6 +207,7 @@ mubarak-olalekan-106a20304"
 
       </motion.div>
     </div>
+    <Footer/>
     </div>
   );
 };

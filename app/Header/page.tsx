@@ -16,10 +16,12 @@ import {
 import Menubar from '@/components/Menubar';
 import Link from 'next/link';
 import { FaX } from 'react-icons/fa6';
+import Footer from '@/components/Footer';
 
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [opener, setOpener] = useState(false)
 
   return (
     <>
@@ -34,9 +36,9 @@ const Header = () => {
           </div>
         </div>
 
-        <div className=' hidden xl:flex space-x-3 md:space-x-5 items-center'>
+        <div className=' hidden xl:flex space-x-3 md:space-x-5 items-center justify-between'>
           <AlertDialog>
-  <AlertDialogTrigger>          <Button className='bg-transparent text-white text-xs md:text-sm'>
+  <AlertDialogTrigger>          <Button className='bg-transparent text-white text-xs md:text-sm hover:text-blus hover:bg-white'>
   About Me
   </Button>
   </AlertDialogTrigger>
@@ -59,7 +61,7 @@ Let&apos;s connect and create something exceptional!s.
     </AlertDialogFooter>
   </AlertDialogContent>
 </AlertDialog>
-          <Button className='bg-transparent text-white text-xs md:text-sm'
+          <Button className='bg-transparent text-white text-xs md:text-sm hover:text-blus hover:bg-white'
           onClick={() => setOpen((prev) => !prev)}>
             Contacts
           </Button>
@@ -140,10 +142,23 @@ Linkedin
          </div>
          </div>
           )}
-          </div>
-          <Button className='bg-white text-black text-xs md:text-sm'>
+          <Button className='bg-white text-black text-xs md:text-sm hover:text-white hover:bg-blus active:bg-white active:text-blus'
+          onClick={() => setOpener((prev) => !prev)}>
             Hire Me
           </Button>
+          {opener && (
+            <div className='w-max absolute p-5 rounded-md top-16 right flex flex-col items-center gap-8'>
+              <div className='flex justify-between items-center gap-8'>
+                <input type="text" className='border border-blus' />
+                <input type="text"  className='border border-blus'/>
+              </div>
+              <div>
+                <textarea name="message " id="" cols={50} rows={5} placeholder='Write your message here.....' className='border border-blus'></textarea>
+              </div>
+            </div>
+          )}
+          </div>
+          
         </div>
         {/* moblie */}
         <div className='text-white font-bold h-full flex items-center justify-between  gap-16 md:hidden'>
@@ -155,6 +170,7 @@ Linkedin
           </div>
           <Menubar/>
         </div>
+
       
     </>
   );
