@@ -1,5 +1,5 @@
 "use client"
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
@@ -63,16 +63,82 @@ Let&apos;s connect and create something exceptional!s.
             Contacts
           </Button>
           {open && (
-           <div  className=" w-max absolute p-4 rounded-md top-16 right-1  shadow-lg bg-white flex  flex-col gap-6 z-20 mt-4 transition-opacity duration-300">
+           <div  className=" w-max absolute p-4 rounded-md top-16 right-96  shadow-lg bg-white flex  flex-col gap-6 z-20 mt-4 transition-opacity duration-300">
            <h1 className="text-lg font-semibold mb-2">contact me on this platforms</h1>
+           <div className='flex items-center justify-between gap-8'>
            <div className="flex flex-col gap-4">
-             <Link href="https://twitter.com/mubaraq_olalekan">
-               <div className="flex items-center gap-2 text-blue-700 hover:underline">
-               <FaTwitter /> Twitter
-               </div>
-              
-             </Link>
+           <Link href="https://twitter.com/mubaraq_olalekan">
+  <div className="flex flex-col items-center gap-2 group">
+    {/* Text */}
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
+      Twitter
+    </h2>
+    {/* Icon */}
+    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+      <span>
+        <FaTwitter />
+      </span>
+    </div>
+  </div>
+</Link>
+
            </div>
+           <div className="flex flex-col gap-4">
+           <Link href="https://twitter.com/mubaraq_olalekan">
+  <div className="flex flex-col items-center gap-2 group">
+    {/* Text */}
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
+      Twitter
+    </h2>
+    {/* Icon */}
+    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+      <span>
+        <FaInstagram />
+      </span>
+    </div>
+  </div>
+</Link>
+
+           </div>
+           <div className="flex flex-col gap-4">
+           <Link href="https://twitter.com/mubaraq_olalekan">
+  <div className="flex flex-col items-center gap-2 group">
+    {/* Text */}
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
+      Twitter
+    </h2>
+    {/* Icon */}
+    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+      <span>
+        <FaTwitter />
+      </span>
+    </div>
+  </div>
+</Link>
+
+           </div>
+           <div className="flex flex-col gap-4">
+           <Link href="https://twitter.com/mubaraq_olalekan">
+  <div className="flex flex-col items-center gap-2 group">
+    {/* Text */}
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
+      Twitter
+    </h2>
+    {/* Icon */}
+    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+      <span>
+        <FaTwitter />
+      </span>
+    </div>
+  </div>
+</Link>
+
+           </div>
+         </div>
          </div>
           )}
           </div>
