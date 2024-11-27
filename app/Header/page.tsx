@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/alert-dialog"
 import Menubar from '@/components/Menubar';
 import Link from 'next/link';
+import { FaX } from 'react-icons/fa6';
 
 
 const Header = () => {
@@ -63,8 +64,8 @@ Let&apos;s connect and create something exceptional!s.
             Contacts
           </Button>
           {open && (
-           <div  className=" w-max absolute p-4 rounded-md top-16 right-96  shadow-lg bg-white flex  flex-col gap-6 z-20 mt-4 transition-opacity duration-300">
-           <h1 className="text-lg font-semibold mb-2">contact me on this platforms</h1>
+           <div  className=" w-max absolute p-4 rounded-md top-16 right  shadow-lg bg-white flex  flex-col gap-6 z-20 mt-4 transition-opacity duration-300">
+           <h1 className="text-xl font-semibold mb-2 flex items-center m-auto text-blus">contact me on this platforms</h1>
            <div className='flex items-center justify-between gap-8'>
            <div className="flex flex-col gap-4">
            <Link href="https://twitter.com/mubaraq_olalekan">
@@ -88,12 +89,12 @@ Let&apos;s connect and create something exceptional!s.
            <Link href="https://twitter.com/mubaraq_olalekan">
   <div className="flex flex-col items-center gap-2 group">
     {/* Text */}
-    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
-      Twitter
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-purple-600  font-bold">
+      Instagram
     </h2>
     {/* Icon */}
-    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+    <div className="relative overflow-hidden bg-gradient-to-t text-pink-500 ring-1 ring-pink-100 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-r from-pink-800 to-purple-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
       <span>
         <FaInstagram />
       </span>
@@ -107,13 +108,13 @@ Let&apos;s connect and create something exceptional!s.
   <div className="flex flex-col items-center gap-2 group">
     {/* Text */}
     <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
-      Twitter
-    </h2>
+Linkedin    
+</h2>
     {/* Icon */}
     <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
       <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
       <span>
-        <FaTwitter />
+        <FaLinkedin />
       </span>
     </div>
   </div>
@@ -123,15 +124,13 @@ Let&apos;s connect and create something exceptional!s.
            <div className="flex flex-col gap-4">
            <Link href="https://twitter.com/mubaraq_olalekan">
   <div className="flex flex-col items-center gap-2 group">
-    {/* Text */}
-    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
-      Twitter
+    <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-600 font-bold">
+      Github
     </h2>
-    {/* Icon */}
-    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
+    <div className="relative overflow-hidden bg-gradient-to-t text-black ring-1  ring-gray-400 font-bold py-2 px-2 rounded-full group-hover:text-white">
+      <span className="absolute inset-0 bg-gradient-to-t from-black to-gray-300 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
       <span>
-        <FaTwitter />
+        <FaGithub />
       </span>
     </div>
   </div>
