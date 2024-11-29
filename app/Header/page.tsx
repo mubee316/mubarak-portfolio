@@ -21,6 +21,7 @@ import Link from 'next/link';
 
 interface HeaderProps {
   scrollToFooter: ( ) => void;
+
 }
 
 const Header: React.FC<HeaderProps> = ({scrollToFooter}) => {
@@ -29,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({scrollToFooter}) => {
   
   return (
     <>
-      <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64 '>
+      <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
       
         <div className='text-white font-bold hidden md:flex items-center  justify-between gap-8 h-full '>
           <div className='  items-center  gap-12'>

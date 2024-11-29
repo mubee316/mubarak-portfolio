@@ -18,6 +18,7 @@ import emailjs from "@emailjs/browser";
 const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
   const [sending, setSending] = useState(false);
   const formRef = useRef();
+  <Footer ref={ref} />
 
   const sendEmail = (e) => {
     e.preventDefault();
