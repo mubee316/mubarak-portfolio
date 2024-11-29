@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Header from "./Header/page";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FaCss3, FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
@@ -16,9 +16,14 @@ import Footer from "@/components/Footer";
 
 
 const Page = () => {
+  const footerRef = useRef(null);
+
+  const scrollToFooter = () => {
+    footerRef.current?.scrollIntoView({behaviour: 'smmoth'});
+  }
   return (
     <div className="overflow-hidden">
-      <Header />
+      <Header  scrollToFooter={scrollToFooter} />
 
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-center ">
         <motion.div
@@ -207,7 +212,7 @@ mubarak-olalekan-106a20304"
 
       </motion.div>
     </div>
-    <Footer/>
+    <Footer ref={footerRef}/>
     </div>
   );
 };
@@ -231,7 +236,7 @@ const ProjectCard = () => (
       visually appealing digital clock interface.
     </p>
 
-    <div className="flex justify-between px-8 mt-4">
+    <div className="flex  gap-6 w-max justify-between px-8 mt-4">
       <Button className="bg-blus">VIEW LIVE</Button>
       <Button className="bg-white text-blus border border-blus hover:text-white">
         GITHUB REPO
@@ -258,7 +263,7 @@ const ProjectCard2 = () => (
       of meal ideas and cooking inspiration.
     </p>
 
-    <div className="flex justify-between px-8 mt-4">
+    <div className="flex  gap-16 justify-between px-8 mt-4">
       <Button className="bg-blus border border-orange-600 text-orange-600 hover:bg-white">VIEW LIVE</Button>
       <Button className="bg-orange-600 text-white border border-blus hover:text-orange hover:border border-orange-600 hover:bg-blus hover:text-orange-600">
         GITHUB REPO

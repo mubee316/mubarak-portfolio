@@ -19,10 +19,10 @@ import { FaX } from 'react-icons/fa6';
 import Footer from '@/components/Footer';
 
 
-const Header = () => {
+const Header = ({scrollToFooter}) => {
   const [open, setOpen] = useState(false);
-  const [opener, setOpener] = useState(false)
 
+  
   return (
     <>
       <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64 '>
@@ -90,11 +90,9 @@ Let&apos;s connect and create something exceptional!s.
            <div className="flex flex-col gap-4">
            <Link href="https://twitter.com/mubaraq_olalekan">
   <div className="flex flex-col items-center gap-2 group">
-    {/* Text */}
     <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-purple-600  font-bold">
       Instagram
     </h2>
-    {/* Icon */}
     <div className="relative overflow-hidden bg-gradient-to-t text-pink-500 ring-1 ring-pink-100 font-bold py-2 px-2 rounded-full group-hover:text-white">
       <span className="absolute inset-0 bg-gradient-to-r from-pink-800 to-purple-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
       <span>
@@ -143,24 +141,15 @@ Linkedin
          </div>
           )}
           <Button className='bg-white text-black text-xs md:text-sm hover:text-white hover:bg-blus active:bg-white active:text-blus'
-          onClick={() => setOpener((prev) => !prev)}>
+          id='scrollHire'
+          onClick={scrollToFooter}>
+          
             Hire Me
           </Button>
-          {opener && (
-            <div className='w-max absolute p-5 rounded-md top-16 right flex flex-col items-center gap-8'>
-              <div className='flex justify-between items-center gap-8'>
-                <input type="text" className='border border-blus' />
-                <input type="text"  className='border border-blus'/>
-              </div>
-              <div>
-                <textarea name="message " id="" cols={50} rows={5} placeholder='Write your message here.....' className='border border-blus'></textarea>
-              </div>
-            </div>
-          )}
+        
           </div>
           
         </div>
-        {/* moblie */}
         <div className='text-white font-bold h-full flex items-center justify-between  gap-16 md:hidden'>
           <div className='flex flex-col items-center '>
           <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
