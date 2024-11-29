@@ -15,8 +15,6 @@ import {
 } from "@/components/ui/alert-dialog"
 import Menubar from '@/components/Menubar';
 import Link from 'next/link';
-import { FaX } from 'react-icons/fa6';
-import Footer from '@/components/Footer';
 
 
 const Header = ({scrollToFooter}) => {
