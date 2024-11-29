@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const Footer = React.forwardRef((props, ref) => {
+const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
   const [sending, setSending] = useState(false);
   const formRef = useRef();
 

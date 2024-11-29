@@ -16,10 +16,10 @@ import Footer from "@/components/Footer";
 
 
 const Page = () => {
-  const footerRef = useRef(null);
+  const footerRef = useRef<HTMLDivElement>(null);
 
   const scrollToFooter = () => {
-    footerRef.current?.scrollIntoView({behaviour: 'smmoth'});
+    footerRef.current?.scrollIntoView({behavior: 'smooth'});
   }
   return (
     <div className="overflow-hidden">
