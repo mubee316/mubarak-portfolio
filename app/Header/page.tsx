@@ -17,7 +17,13 @@ import Menubar from '@/components/Menubar';
 import Link from 'next/link';
 
 
-const Header = ({scrollToFooter}) => {
+
+
+interface HeaderProps {
+  scrollToFooter: ( ) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({scrollToFooter}) => {
   const [open, setOpen] = useState(false);
 
   
