@@ -4,8 +4,8 @@ import Header from "./Header/page";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FaCss3, FaCss3Alt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaCarCrash, FaCss3, FaCss3Alt, FaGit, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaDiagramNext, FaGamepad, FaLinkedin } from "react-icons/fa6";
 import { Progress } from "@/components/ui/progress";
 import {
   HoverCard,
@@ -91,49 +91,63 @@ mubarak-olalekan-106a20304"
         </h1>
         <p className="mt-2">Discover My Work: A Tour of My Projects</p>
       </div>
+      <div className="flex justify-center items-center">
+  <div className="max-w-5xl mx-auto flex gap-4 mt-10 md:mt-20 px-4 md:px-10 overflow-x-scroll scrollbar">
+    <motion.div
+      initial={{ x: -100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        x: { type: "spring", stiffness: 60 },
+        opacity: { duration: 0.6 },
+        ease: "easeIn",
+        duration: 1,
+      }}
+    >
+      <ProjectCard />
+    </motion.div>
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        y: { type: "spring", stiffness: 60 },
+        opacity: { duration: 0.6 },
+        ease: "easeIn",
+        duration: 0.2,
+      }}
+    >
+      <ProjectCard2 />
+    </motion.div>
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        y: { type: "spring", stiffness: 60 },
+        opacity: { duration: 0.6 },
+        ease: "easeIn",
+        duration: 0.2,
+      }}
+    >
+      <ProjectCard2 />
+    </motion.div>
+    <motion.div
+      initial={{ x: 100, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        x: { type: "spring", stiffness: 60 },
+        opacity: { duration: 0.6 },
+        ease: "easeIn",
+        duration: 3,
+      }}
+    >
+      <ProjectCard />
+    </motion.div>
+  </div>
+</div>
 
-      <div className="flex  gap-4 mt-10 md:mt-20 px-4 md:px-10 overflow-x-scroll scrollbar">
-        <motion.div 
-           initial={{ x: -100, opacity: 0 }}
-           whileInView={{ x: 0, opacity: 1 }}
-           transition={{
-             delay: 0.2,
-             x: { type: "spring", stiffness: 60 },
-             opacity: { duration: 0.6 },
-             ease: "easeIn",
-             duration: 1,
-           }}><ProjectCard  /></motion.div>
-        <motion.div
-           initial={{ y: 100, opacity: 0 }}
-           whileInView={{ y: 0, opacity: 1 }}
-           transition={{
-             delay: 0.2,
-             y: { type: "spring", stiffness: 60 },
-             opacity: { duration: 0.6 },
-             ease: "easeIn",
-             duration: 0.2,
-           }}><ProjectCard2 /></motion.div>
-        <motion.div
-           initial={{ y: 100, opacity: 0 }}
-           whileInView={{ y: 0, opacity: 1 }}
-           transition={{
-             delay: 0.2,
-             y: { type: "spring", stiffness: 60 },
-             opacity: { duration: 0.6 },
-             ease: "easeIn",
-             duration: 0.2,
-           }}><ProjectCard2 /></motion.div>
-        <motion.div 
-           initial={{ x: 100, opacity: 0 }}
-           whileInView={{ x: 0, opacity: 1 }}
-           transition={{
-             delay: 0.2,
-             x: { type: "spring", stiffness: 60 },
-             opacity: { duration: 0.6 },
-             ease: "easeIn",
-             duration:3 ,
-           }}><ProjectCard /></motion.div>
-      </div>
       {/* <div className="mt-32 flex  flex-col justify-center border border-red-800">
       <Progress value={90} className="w-[350px]  "/><p>HTML</p>
       <Progress value={80}  className="w-[350px] "/><p>CSS</p>
@@ -208,6 +222,15 @@ mubarak-olalekan-106a20304"
                 <p>83%</p>
               </span>
             </div>
+            <div className=" flex  items-center justify-between gap-6">
+              <div className="">
+                <FaCarCrash className="w-10 h-20"/>
+              </div>
+              <span className="flex items-center gap-8">
+                <Progress value={85} className="w-56 h-10"/>
+                <p>83%</p>
+              </span>
+            </div>
    
 
       </motion.div>
@@ -218,7 +241,7 @@ mubarak-olalekan-106a20304"
 };
 
 const ProjectCard = () => (
-  <div className="border border-blus rounded-xl w-full h-auto flex flex-col text-center p-4 ">
+  <div className=" shadow-2xl rounded-xl w-full h-auto flex flex-col text-center p-4 ">
     <p className="animate-bounce mt-2 text-xl font-bold">DIGITAL CLOCK</p>
     <Image
       src="/nnnn.png"
@@ -245,7 +268,7 @@ const ProjectCard = () => (
   </div>
 );
 const ProjectCard2 = () => (
-  <div className="border border-blus rounded-xl w-full h-auto flex flex-col text-center p-4 bg-blus text-white">
+  <div className=" shadow-2xl shadow-blue-900 rounded-xl w-full h-auto flex flex-col text-center p-4 bg-blus text-white">
     <p className="animate-bounce mt-2 text-xl font-bold">FOOD RECIPE FINDER</p>
     <Image
       src="/recipe.png"

@@ -82,9 +82,9 @@ Let&apos;s connect and create something exceptional!s.
       Twitter
     </h2>
     {/* Icon */}
-    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-      <span>
+    <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-blue">
+      <span className="absolute inset-0 bg-gradient-to-t from-white to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0 z-0"></span>
+      <span className='relative z-10'>
         <FaTwitter />
       </span>
     </div>
@@ -99,8 +99,8 @@ Let&apos;s connect and create something exceptional!s.
       Instagram
     </h2>
     <div className="relative overflow-hidden bg-gradient-to-t text-pink-500 ring-1 ring-pink-100 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-r from-pink-800 to-purple-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-      <span>
+      <span className="absolute inset-0 bg-gradient-to-r from-pink-800 to-purple-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0 z-0"></span>
+      <span className='relative z-10'>
         <FaInstagram />
       </span>
     </div>
@@ -117,8 +117,8 @@ Linkedin
 </h2>
     {/* Icon */}
     <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-t from-blue-800 to-blue-600 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-      <span>
+      <span className="absolute inset-0 bg-gradient-to-t from-blue-600 to-white transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0 z-0"></span>
+      <span className='relative z-10'>
         <FaLinkedin />
       </span>
     </div>
@@ -133,8 +133,8 @@ Linkedin
       Github
     </h2>
     <div className="relative overflow-hidden bg-gradient-to-t text-black ring-1  ring-gray-400 font-bold py-2 px-2 rounded-full group-hover:text-white">
-      <span className="absolute inset-0 bg-gradient-to-t from-black to-gray-300 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"></span>
-      <span>
+      <span className="absolute inset-0 bg-gradient-to-t from-black to-gray-300 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0 z-0"></span>
+      <span className='relative z-10'>
         <FaGithub />
       </span>
     </div>
