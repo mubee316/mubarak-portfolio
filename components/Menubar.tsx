@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Contacts from '@/components/Contacts'
 
 const Menubar = () => {
     const [open, setOpen] = useState(false)

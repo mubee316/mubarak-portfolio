@@ -30,10 +30,10 @@ const Header: React.FC<HeaderProps> = ({scrollToFooter}) => {
   
   return (
     <>
-      <div className='flex flex-row items-center justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
+      <div className='flex flex-row items-center  justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
       
-        <div className='text-white font-bold hidden md:flex items-center  justify-between gap-8 h-full '>
-          <div className='  items-center  gap-12'>
+        <div className=' hidden text-white font-bold md:flex items-center  justify-between gap-8 h-full'>
+          <div className='   items-center  gap-12'>
           <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
           <p className='font-light font-mono text-xs md:text-sm'>
             Software Engineer (Front-End)
@@ -111,11 +111,9 @@ Let&apos;s connect and create something exceptional!s.
            <div className="flex flex-col gap-4">
            <Link href="https://twitter.com/mubaraq_olalekan">
   <div className="flex flex-col items-center gap-2 group">
-    {/* Text */}
     <h2 className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-blue-500 font-bold">
 Linkedin    
 </h2>
-    {/* Icon */}
     <div className="relative overflow-hidden bg-gradient-to-t text-blue-500 ring-1 font-bold py-2 px-2 rounded-full group-hover:text-white">
       <span className="absolute inset-0 bg-gradient-to-t from-blue-600 to-white transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0 z-0"></span>
       <span className='relative z-10'>
@@ -154,16 +152,17 @@ Linkedin
         
           </div>
           
-        </div>
-        <div className='text-white font-bold h-full flex items-center justify-between  gap-16 md:hidden'>
+          <div className=' md:hidden flex items-center justify-between gap-20  text-white font-bold h-full'>
           <div className='flex flex-col items-center '>
           <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
-          <p className='font-light font-mono text-xs md:text-sm'>
+          <p className='font-light font-mono text-xs'>
             Software Engineer (Front-End)
           </p>
           </div>
           <Menubar/>
         </div>
+        </div>
+      
 
       
     </>
