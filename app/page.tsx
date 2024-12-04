@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Header from "./Header/page";
+import Header from "../components/Header";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
