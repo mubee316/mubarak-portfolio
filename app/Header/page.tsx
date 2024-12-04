@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({scrollToFooter}) => {
     <>
       <div className='flex flex-row items-center  justify-between border bg-blus  fixed top-0 w-full z-10 bg-blus/90 backdrop-blur-md px-4  h-20  md:px-8 lg:px-16 xl:px-32 2xl:px-64'>
       
-        <div className=' hidden text-white font-bold md:flex items-center  justify-between gap-8 h-full'>
+        <div className=' hidden text-white font-bold md:flex items-center  justify-between  gap-8 h-full'>
           <div className='   items-center  gap-12'>
           <h1 className='text-lg md:text-2xl'>OLALEKAN MUBARAK</h1>
           <p className='font-light font-mono text-xs md:text-sm'>
