@@ -142,16 +142,26 @@ mubarak-olalekan-106a20304"
     </motion.div>
   </div>
 </div>
-
-<div className="flex items-end">
+< motion.div 
+           initial={{ x: 100, opacity: 0 }}
+           whileInView={{ x: 0, opacity: 1 }}
+           transition={{
+             delay: 0.2,
+             x: { type: "spring", stiffness: 60 },
+             opacity: { duration: 0.6 },
+             ease: "easeIn",
+             duration:3 ,
+           }}>
+<div className="flex items-center justify-end text-black fixed  top-[100px] w-full z-10">
   <Button><FaArrowUp/></Button>
 </div>
+</motion.div>
 
    
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-center mt-20 space-x-20 ">
         <motion.div 
          initial={{ x: -100, opacity: 0 }}
-         whileInView={{ x: 0, opacity: 1 }}
+         animate={{ x: 0, opacity: 1 }}
          transition={{
            delay: 0.2,
            x: { type: "spring", stiffness: 60 },
