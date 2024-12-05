@@ -4,14 +4,9 @@ import Header from "../components/Header";
 import React, { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FaCarCrash, FaCss3, FaCss3Alt, FaGit, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaArrowUp, FaCarCrash, FaCss3, FaCss3Alt, FaGit, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { FaDiagramNext, FaGamepad, FaLinkedin } from "react-icons/fa6";
 import { Progress } from "@/components/ui/progress";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 import Footer from "@/components/Footer";
 
 
@@ -148,12 +143,11 @@ mubarak-olalekan-106a20304"
   </div>
 </div>
 
-      {/* <div className="mt-32 flex  flex-col justify-center border border-red-800">
-      <Progress value={90} className="w-[350px]  "/><p>HTML</p>
-      <Progress value={80}  className="w-[350px] "/><p>CSS</p>
-      <Progress value={75}  className="w-[350px] "/><p>REACT</p>
+<div className="flex items-end">
+  <Button><FaArrowUp/></Button>
+</div>
 
-      </div> */}
+   
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-center mt-20 space-x-20 ">
         <motion.div 
          initial={{ x: -100, opacity: 0 }}
