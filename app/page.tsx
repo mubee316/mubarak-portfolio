@@ -10,14 +10,36 @@ import { Progress } from "@/components/ui/progress";
 import Footer from "@/components/Footer";
 
 
+
+
+
+
+
 const Page = () => {
   const footerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false)
 
   const scrollToFooter = () => {
     footerRef.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      behavior: "smooth"
+    })
   }
   return (
+    
     <div className="overflow-hidden">
+         <button
+      onClick={scrollToTop}
+      className={`fixed bottom-4 right-4 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all ${
+        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
+      ↑
+    </button>
       <Header  scrollToFooter={scrollToFooter} />
 
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-center ">
@@ -142,7 +164,7 @@ mubarak-olalekan-106a20304"
     </motion.div>
   </div>
 </div>
-< motion.div 
+{/* < motion.div 
            initial={{ x: 100, opacity: 0 }}
            whileInView={{ x: 0, opacity: 1 }}
            transition={{
@@ -155,7 +177,7 @@ mubarak-olalekan-106a20304"
 <div className="flex items-center justify-end text-black fixed  top-[100px] w-full z-10">
   <Button><FaArrowUp/></Button>
 </div>
-</motion.div>
+</motion.div> */}
 
    
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-center mt-20 space-x-20 ">
