@@ -27,18 +27,26 @@ const Page = () => {
     window.scrollTo({
       top:0,
       behavior: "smooth"
-    })
-  }
+    });
+  };
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("smooth", toggleVisibility);
+  }, []);
   return (
     
     <div className="overflow-hidden">
          <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all ${
+      className={`fixed bottom-4 right-4 px-4 py-2 bg-blus text-white rounded-md shadow-lg hover:bg-white hover:text-blus transition-all ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      ↑
+      <FaArrowUp/>
     </button>
       <Header  scrollToFooter={scrollToFooter} />
 
