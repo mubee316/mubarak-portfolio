@@ -17,24 +17,33 @@ import emailjs from "@emailjs/browser";
 
 const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
   const [sending, setSending] = useState(false);
-  const formRef = useRef();
-  <Footer ref={ref} />
+  const formRef = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSending(true); // Set loading state
 
+    if (
+      !process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
+      !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    ) {
+      alert("EmailJS environment variables are missing.");
+      setSending(false);
+      return;
+    }
+
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, 
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, 
-        formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY 
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       )
       .then(
         (result) => {
           alert("Message sent successfully!");
-          formRef.current.reset(); // Clear form
+          formRef.current?.reset(); // Clear form
           setSending(false); // Reset loading state
         },
         (error) => {
@@ -84,7 +93,6 @@ const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
             </button>
           </form>
         </div>
-
         <div className="flex-1">
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="text-sm space-y-2">
@@ -149,11 +157,8 @@ const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
           </div>
         </div>
       </div>
-
       <div className="mt-8 border-t border-white/20 pt-4 text-center text-sm">
-        <p>
-          © {new Date().getFullYear()} Mubarak Olalekan. All Rights Reserved.
-        </p>
+        <p>© {new Date().getFullYear()} Mubarak Olalekan. All Rights Reserved.</p>
       </div>
     </footer>
   );
