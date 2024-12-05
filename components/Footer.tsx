@@ -20,7 +20,7 @@ const Footer = React.forwardRef<HTMLDivElement>((_, ref) => {
   const formRef = useRef();
   <Footer ref={ref} />
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSending(true); // Set loading state
 
